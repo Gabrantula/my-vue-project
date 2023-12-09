@@ -1,11 +1,13 @@
 <script>
 import { mapActions, mapState } from 'pinia';
 import { useUserStore } from '../pinia-store/userStore';
+import { useCartStore } from '../pinia-store/cartStore';
 
 export default {
 
     computed: {
         ...mapState(useUserStore, ['isAuth', 'profile']),
+        ...mapState(useCartStore, ['cards'])
     },
     methods: {
         ...mapActions(useUserStore, ['logout']),
@@ -49,7 +51,7 @@ export default {
                     👤 Profile
                 </router-link>
                 <router-link v-if="isAuth" to="/cart" class="w3-bar-item w3-button">
-                    🛒 CART
+                    🛒 CART <span v-if="cards.length">({{ cards.length }})</span>
                 </router-link>
                 <router-link v-if="isAuth" to="/" class="w3-bar-item w3-button" @click="logout">
                     LOGOUT
@@ -95,7 +97,7 @@ export default {
             👤 Profile
         </router-link>
         <router-link v-if="isAuth" to="/cart" onclick="w3_close()" class="w3-bar-item w3-button">
-            🛒 CART
+            🛒 CART <span v-if="cards.length">({{ cards.length }})</span>
         </router-link>
         <router-link v-if="isAuth" to="/" class="w3-bar-item w3-button" @click="logout">
             LOGOUT
