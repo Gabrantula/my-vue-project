@@ -1,5 +1,28 @@
 <script>
+import { useTeamStore } from '../../pinia-store/teamStore';
+import { getAllTeam } from '../../services/team';
+import { mapActions } from 'pinia';
+import PersonCard from './PersonCard.vue';
+
 export default {
+    components: { PersonCard },
+    data() {
+        return {
+            team: [],
+        };
+    },
+    computed: {
+        displayTeam() {
+            return this.team
+        }
+    },
+    async created() {
+        const promis = await Promise.all([getAllTeam(), []]);
+        this.team = promis[0];
+    },
+    methods: {
+        ...mapActions(useTeamStore, ['contact'])
+    },
 
 };
 </script>
@@ -14,7 +37,9 @@ export default {
             The ones who runs this company
         </p>
         <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-            <div class="w3-col l3 m6 w3-margin-bottom">
+            <PersonCard v-for="person in displayTeam" :key="person.id" :person="person" @on-contact="contact" />
+            <!-- 
+    <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-card">
                     <img src="/pic/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" alt="John" style="width:100%">
                     <div class="w3-container">
@@ -90,8 +115,11 @@ export default {
                     </div>
                 </div>
             </div>
+            -->
+
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped></style>
+
