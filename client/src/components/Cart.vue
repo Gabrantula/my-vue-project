@@ -72,9 +72,7 @@ export default {
                                 Product price: {{ offerInfo[offer._id].price }}$
                             </p>
                         </td>
-                        <td>
-                            <input type="number" value="offer.quantity" style="width: 5rem;">
-                        </td>
+
                         <td>
                             <input type="number" :value="offer.quantity" style="width: 5rem;"
                                 @input="changeQuantity(offer._id, $event)">
