@@ -16,7 +16,8 @@ export async function getAllProducts() {
 export async function getProduct(id) {
     try {
         const res = await axios.get(`http://localhost:3030/data/cards/${id}`)
-        // console.log(res);
+        return res.data
+
     }
     catch (err) {
         console.error(err)
