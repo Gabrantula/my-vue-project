@@ -11,6 +11,7 @@ export async function loginUser(userData) {
     }
     catch (err) {
         console.error(err);
+        alert('Wrong password or email')
         return null;
     }
 }
