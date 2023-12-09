@@ -6,7 +6,8 @@ import Register from '../components/login-register/Register.vue';
 import Contacts from '../components/Contacts.vue';
 import OurWork from '../components/OurWork.vue';
 import PricingSection from '../components/catalog/Pricing-section.vue';
-import TeamSection from '../components/Team-section.vue';
+import TeamSection from '../components/team/Team-section.vue';
+import PersonContact from '../components/team/Person-contact.vue';
 import Cart from '../components/Cart.vue';
 import Profile from '../components/Profile.vue';
 import NotFound from '../components/NotFound.vue';
@@ -52,6 +53,10 @@ const routes = [
     {
         path: '/team-section',
         component: TeamSection,
+    },
+    {
+        path: '/person-contact',
+        component: PersonContact
     },
     {
         path: '/profile',
