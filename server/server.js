@@ -1488,6 +1488,40 @@
       },
 
     ],
+    team: [
+      {
+        image: "/pic/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg",
+        name: "John Doe",
+        position: "CEO & Founder",
+        description: "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.",
+        phone: "0011223344",
+        id: "0"
+      },
+      {
+        image: "/pic/michael-dam-mEZ3PoFGs_k-unsplash.jpg",
+        name: "Anja Doe",
+        position: "Art Director",
+        description: "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.",
+        phone: "3344556677",
+        id: "1"
+      },
+      {
+        image: "/pic/jurica-koletic-7YVZYZeITc8-unsplash.jpg",
+        name: "Mike Ross",
+        position: "Web Designer",
+        description: "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.",
+        phone: "4455667788",
+        id: "2"
+      },
+      {
+        image: "/pic/tamara-bellis-eDVQwVMLMgU-unsplash.jpg",
+        name: "Alex Star",
+        position: "Designer",
+        description: "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.",
+        phone: "5566778899",
+        id: "3"
+      },
+    ]
   };
   var rules$1 = {
     users: {
