@@ -60,4 +60,9 @@ export default {
     </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style scoped>
+#about {
+    margin-top: 50px;
+    height: 70vh;
+}
+</style>
