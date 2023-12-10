@@ -2,13 +2,23 @@
 <script>
 import PersonCard from './PersonCard.vue';
 
+
+
 export default {
+    props: {
+        person: {}
+    },
     components: { PersonCard }
 }
 </script>
 <template>
     <div class="box">
-        <PersonCard />
+        <div class="image">
+            <PersonCard />
+        </div>
+        <div class="info">
+
+        </div>
     </div>
 </template>
 
