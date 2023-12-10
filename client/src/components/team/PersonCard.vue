@@ -1,9 +1,11 @@
 <script>
 import { mapState } from 'pinia';
+
 import { useUserStore } from '../../pinia-store/userStore';
 import { useTeamStore } from '../../pinia-store/teamStore';
 
 export default {
+
     props: {
         person: {
             type: Object,
@@ -18,11 +20,12 @@ export default {
             })
         }
     },
-    emits: ['onContact'],
+    //  emits: ['onContact'],
     computed: {
         ...mapState(useUserStore, ['isAuth']),
         ...mapState(useTeamStore, ['getPerson'])
-    }
+    },
+
 }
 </script>
 <template>
@@ -38,10 +41,19 @@ export default {
                     {{ person.description }}
                 </p>
                 <p>
-                    <router-link to="/person-contact" v-if="isAuth" @click="$emit('onContact', person.id)"
+
+                    <!-- tova e bez emit-->
+                    <router-link :to="{ name: 'person-contact', params: { id: person.id } }" v-if="isAuth"
                         class="w3-button w3-light-grey w3-block">
                         <i class="fa fa-envelope" /> Contact
                     </router-link>
+
+                    <!-- 
+      <router-link :to="{ name: 'person-contact', params: { id: person.id } }" v-if="isAuth"
+                        @click="$emit('onContact', person.id)" class="w3-button w3-light-grey w3-block">
+                        <i class="fa fa-envelope" /> Contact
+                    </router-link>
+-->
                 </p>
             </div>
         </div>
