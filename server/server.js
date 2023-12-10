@@ -1521,6 +1521,64 @@
         phone: "5566778899",
         id: "3"
       },
+    ],
+      work: [
+      {
+        image: "/pic/ourWork/christin-hume-Hcfwew744z4-unsplash.jpg",
+        title: "A laptop",
+        createdFrom: "Alex Star",
+        description: "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.",
+        id: "0"
+      },
+      {
+        image: "/pic/ourWork/kelly-sikkema-v9FQR4tbIq8-unsplash.jpg",
+        title: "A project",
+        createdFrom: "Mike Ross",
+        description: "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.",
+        id: "1"
+      },
+      {
+        image: "/pic/ourWork/priscilla-du-preez-BjhUu6BpUZA-unsplash.jpg",
+        title: "A phone",
+        createdFrom: "Alex Star",
+        description: "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.",
+        id: "2"
+      },
+      {
+        image: "/pic/ourWork/david-henrichs-72AYEEBJpz4-unsplash.jpg",
+        title: "A drone",
+        createdFrom: "Mike Ross",
+        description: "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.",
+        id: "3"
+      },
+      {
+        image: "/pic/ourWork/nordwood-themes-F3Dde_9thd8-unsplash.jpg",
+        title: "A camera",
+        createdFrom: "John Doe",
+        description: "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.",
+        id: "4"
+      },
+      {
+        image: "/pic/ourWork/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg",
+        title: "A work place",
+        createdFrom: "John Doe",
+        description: "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.",
+        id: "5"
+      },
+      {
+        image: "/pic/ourWork/matt-botsford-OKLqGsCT8qs-unsplash.jpg",
+        title: "A microphone",
+        createdFrom: "Anja Doe",
+        description: "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.",
+        id: "6"
+      },
+      {
+        image: "/pic/ourWork/eric-nopanen-8e0EHPUx3Mo-unsplash.jpg",
+        title: "A music",
+        createdFrom: "Anja Doe",
+        description: "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.",
+        id: "7"
+      },
     ]
   };
   var rules$1 = {
