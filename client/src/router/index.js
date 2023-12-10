@@ -4,7 +4,7 @@ import About from '../components/About.vue';
 import Login from '../components/login-register/Login.vue';
 import Register from '../components/login-register/Register.vue';
 import Contacts from '../components/Contacts.vue';
-import OurWork from '../components/OurWork.vue';
+import OurWork from '../components/our-work/OurWork.vue';
 import PricingSection from '../components/catalog/Pricing-section.vue';
 import TeamSection from '../components/team/Team-section.vue';
 import PersonContact from '../components/team/Person-contact.vue';
