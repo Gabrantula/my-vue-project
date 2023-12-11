@@ -1,22 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import { useUserStore } from '../pinia-store/userStore';
 import HeaderApp from '../components/HeaderApp.vue';
 import About from '../components/About.vue';
 import Login from '../components/login-register/Login.vue';
 import Register from '../components/login-register/Register.vue';
 import Contacts from '../components/Contacts.vue';
 import OurWork from '../components/our-work/OurWork.vue';
+import WorkInfo from '../components/our-work/WorkInfo.vue';
 import PricingSection from '../components/catalog/Pricing-section.vue';
 import TeamSection from '../components/team/Team-section.vue';
 import PersonContact from '../components/team/Person-contact.vue';
 import Cart from '../components/Cart.vue';
 import Profile from '../components/Profile.vue';
 import NotFound from '../components/NotFound.vue';
-import { useUserStore } from '../pinia-store/userStore';
 
-/* function validateUser() {
-    const userStore = useUserStore()
-    return userStore.isAuth ? userStore.isAuth : {path: '/login'}
-} */
+
 const routes = [
     {
         path: '/',
@@ -47,6 +45,12 @@ const routes = [
         component: OurWork,
     },
     {
+        path: '/our-work/:id',
+        name: 'work-info',
+        component: WorkInfo,
+        props: true,
+    },
+    {
         path: '/pricing-section',
         component: PricingSection,
     },
@@ -55,9 +59,17 @@ const routes = [
         component: TeamSection,
     },
     {
-        path: '/person-contact',
-        component: PersonContact
+        path: '/team-section/:id',
+        name: 'person-contact',
+        component: PersonContact,
+        props: true,
+        beforeEnter: () => {
+            const userStore = useUserStore();
+            return userStore.isAuth ? userStore.isAuth : { path: '/login' };
+        }
+
     },
+
     {
         path: '/profile',
         component: Profile,
@@ -69,6 +81,10 @@ const routes = [
     {
         path: '/cart',
         component: Cart,
+        beforeEnter: () => {
+            const userStore = useUserStore();
+            return userStore.isAuth ? userStore.isAuth : { path: '/login' };
+        },
     },
     {
         path: '/:pathMatch(.*)*',
@@ -81,6 +97,7 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
+
 });
 
 export default router;
