@@ -1,10 +1,6 @@
 <script>
 export default {
-    methods: {
-        goToTop() {
-            this.$router.push({ path: '/' });
-        },
-    },
+
 
 };
 </script>

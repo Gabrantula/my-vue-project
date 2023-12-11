@@ -1,7 +1,8 @@
 <script>
-import { useTeamStore } from '../../pinia-store/teamStore';
+//import { useTeamStore } from '../../pinia-store/teamStore';
 import { getAllTeam } from '../../services/team';
-import { mapActions } from 'pinia';
+
+//import { mapActions } from 'pinia';
 import PersonCard from './PersonCard.vue';
 
 export default {
@@ -43,4 +44,4 @@ export default {
     </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style  scoped></style>
