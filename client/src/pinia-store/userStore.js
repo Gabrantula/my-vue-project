@@ -1,10 +1,12 @@
 import { defineStore } from 'pinia';
+import { useCartStore } from './cartStore';
 
 export const useUserStore = defineStore('user', {
     state: () => {
         return {
             isAuth: false,
             profile: null,
+            cards: useCartStore()
         };
     },
     actions: {
@@ -24,6 +26,7 @@ export const useUserStore = defineStore('user', {
         logout() {
             this.isAuth = false;
             this.profile = null;
+            this.cards.$reset()
             sessionStorage.removeItem('user');
         },
     },
