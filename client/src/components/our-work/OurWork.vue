@@ -34,45 +34,7 @@ export default {
         <div class="w3-row-padding" style="margin-top:64px">
             <WorkCard v-for="item in displayWork" :key="item.id" :item="item" />
         </div>
-        <!-- 
-  <div class="w3-row-padding" style="margin-top:64px">
-            <div class="w3-col l3 m6">
-                <img src="/pic/ourWork/christin-hume-Hcfwew744z4-unsplash.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="A laptop">
-            </div>
-            <div class="w3-col l3 m6">
-                <img src="/pic/ourWork/kelly-sikkema-v9FQR4tbIq8-unsplash.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="A project">
-            </div>
-            <div class="w3-col l3 m6">
-                <img src="/pic/ourWork/priscilla-du-preez-BjhUu6BpUZA-unsplash.jpg" style="width:100%"
-                    onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
-            </div>
-            <div class="w3-col l3 m6">
-                <img src="/pic/ourWork/david-henrichs-72AYEEBJpz4-unsplash.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="a drone">
-            </div>
-        </div>
 
-        <div class="w3-row-padding w3-section">
-            <div class="w3-col l3 m6">
-                <img src="/pic/ourWork/nordwood-themes-F3Dde_9thd8-unsplash.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="A camera">
-            </div>
-            <div class="w3-col l3 m6">
-                <img src="/pic/ourWork/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg" style="width:100%"
-                    onclick="onClick(this)" class="w3-hover-opacity" alt="A work">
-            </div>
-            <div class="w3-col l3 m6">
-                <img src="/pic/ourWork/matt-botsford-OKLqGsCT8qs-unsplash.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="A microphone">
-            </div>
-            <div class="w3-col l3 m6">
-                <img src="/pic/ourWork/eric-nopanen-8e0EHPUx3Mo-unsplash.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="A music">
-            </div>
-        </div>
--->
 
     </div>
     <!-- Modal for full size images on click -->
