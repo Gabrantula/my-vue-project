@@ -1522,11 +1522,7 @@
         id: "3"
       },
     ],
-<<<<<<< HEAD
     work: [
-=======
-      work: [
->>>>>>> 85bf90df8c05c4fe1779a9fd4c0fa76006318fe8
       {
         image: "/pic/ourWork/christin-hume-Hcfwew744z4-unsplash.jpg",
         title: "A laptop",

@@ -2,8 +2,8 @@
 <script>
 //import PersonCard from './PersonCard.vue';
 import { getSinglePerson } from '../../services/team'
-import { mapState } from 'pinia';
-import { useTeamStore } from '../../pinia-store/teamStore';
+//import { mapState } from 'pinia';
+//import { useTeamStore } from '../../pinia-store/teamStore';
 
 
 export default {
@@ -68,7 +68,6 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
-<<<<<<< HEAD
     /* margin-top: 12vh;*/
     margin: 10% auto 2% auto;
     box-shadow: 5px 5px 10px rgb(80, 138, 115);
@@ -76,8 +75,10 @@ export default {
 }
 
 .box .image {
-    width: 45%;
-    height: 90%;
+    /* width: 45%;
+    height: 90%;*/
+    width: 50%;
+    height: 50vh;
     /* margin-left: 3%;*/
     box-shadow: 5px 5px 10px rgb(80, 138, 115);
     border-radius: 3%;
@@ -85,15 +86,10 @@ export default {
     margin-top: 30px;
     margin-left: 1%;
     filter: brightness(75%);
-=======
+
     margin-top: 10vh;
 }
 
-.box .image {
-    width: 50%;
-    height: 50vh;
->>>>>>> 85bf90df8c05c4fe1779a9fd4c0fa76006318fe8
-}
 
 .image img {
     width: 100%;
@@ -101,7 +97,7 @@ export default {
 }
 
 .box .info {
-<<<<<<< HEAD
+
     text-align: center;
 
 }
@@ -143,9 +139,5 @@ export default {
 
 }
 </style>
-=======
 
-    margin: 0 auto;
-}
-</style>
->>>>>>> 85bf90df8c05c4fe1779a9fd4c0fa76006318fe8
+

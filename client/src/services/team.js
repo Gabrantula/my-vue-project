@@ -22,8 +22,4 @@ export async function getSinglePerson(id) {
         console.error(err)
         return null
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 85bf90df8c05c4fe1779a9fd4c0fa76006318fe8

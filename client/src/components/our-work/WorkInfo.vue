@@ -28,11 +28,7 @@ export default {
 
             <h3>{{ item.title }}</h3>
             <p class="w3-opacity">
-<<<<<<< HEAD
                 Created from <span>{{ item.createdFrom }}</span>
-=======
-                Created from {{ item.createdFrom }}
->>>>>>> 85bf90df8c05c4fe1779a9fd4c0fa76006318fe8
             </p>
 
             <h3>Info</h3>
@@ -53,23 +49,17 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
-<<<<<<< HEAD
+
     margin: 10% auto 2% auto;
     box-shadow: 5px 5px 10px rgb(80, 138, 115);
 }
 
 .box .image {
-    width: 40%;
-    height: 100%;
-    box-shadow: 5px 5px 10px rgb(80, 138, 115);
-=======
-    margin-top: 10vh;
-}
-
-.box .image {
     width: 50%;
     height: 50vh;
->>>>>>> 85bf90df8c05c4fe1779a9fd4c0fa76006318fe8
+    box-shadow: 5px 5px 10px rgb(80, 138, 115);
+
+    margin-top: 10vh;
 }
 
 .image img {
@@ -78,7 +68,7 @@ export default {
 }
 
 .box .info {
-<<<<<<< HEAD
+
     text-align: center;
     width: 60%;
 }
@@ -131,9 +121,8 @@ export default {
     font-size: 1.4rem;
     font-style: italic;
     margin-top: 30px;
-=======
 
-    margin: 0 auto;
->>>>>>> 85bf90df8c05c4fe1779a9fd4c0fa76006318fe8
+
+
 }
 </style>
