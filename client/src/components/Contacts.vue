@@ -38,10 +38,15 @@ export default {
                 </p>
             </form>
             <!-- Image of location/map -->
-            <img src="/pic/street/maarten-van-den-heuvel--WWFGrfm7qk-unsplash.jpg" class="w3-image w3-greyscale"
-                style="width:100%;margin-top:48px">
+            <img src="/pic/street/maarten-van-den-heuvel--WWFGrfm7qk-unsplash.jpg" class="w3-image w3-greyscale" style="">
         </div>
     </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style scoped>
+img {
+    width: 90%;
+    margin: 45px auto 0 auto;
+    height: 800px;
+}
+</style>

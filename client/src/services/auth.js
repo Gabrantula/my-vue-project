@@ -6,7 +6,7 @@ export async function loginUser(userData) {
         // const res = await axios.post('https://dummyjson.com/auth/login', userData);
         const res = await axios.post('http://localhost:3030/users/login', userData)
         // const res = await axios.post('https://fakestoreapi.com/auth/login', userData)
-        console.log(res.data);
+        // console.log(res.data);
         return res.data;
     }
     catch (err) {

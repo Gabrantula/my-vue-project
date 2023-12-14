@@ -8,24 +8,14 @@ export default {
 <template>
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64">
-        <!--
-                             <router-link to="/" class="w3-button w3-light-grey">
-                            <i class="fa fa-arrow-up w3-margin-right" />To the top
-                        </router-link>
-                        -->
-        <!--
-       <button class="w3-button w3-light-grey" @click="goToTop">
-                <i class="fa fa-arrow-up w3-margin-right" />To the top
-            </button>
-                        -->
-
+        <p>Created by Gabrantula Tsvetkova</p>
         <div class="w3-xlarge w3-section">
-            <i class="fa fa-facebook-official w3-hover-opacity" />
-            <i class="fa fa-instagram w3-hover-opacity" />
-            <i class="fa fa-snapchat w3-hover-opacity" />
-            <i class="fa fa-pinterest-p w3-hover-opacity" />
-            <i class="fa fa-twitter w3-hover-opacity" />
-            <i class="fa fa-linkedin w3-hover-opacity" />
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-pinterest"></i>
         </div>
         <p>
             Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
@@ -34,4 +24,8 @@ export default {
     </footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+.w3-section i {
+    margin-left: 5px;
+}
+</style>

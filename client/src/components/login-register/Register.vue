@@ -21,7 +21,7 @@ export default {
         return {
             isLoading: false,
             user: {
-                username: '',
+                email: '',
                 password: '',
             },
             registerData: {
@@ -87,8 +87,7 @@ export default {
                 this.$router.push('/profile');
             }
             this.isLoading = false;
-            // username: kminchelle  ,
-            // password: 0lelplR  ,
+
         },
     },
 };
@@ -186,17 +185,15 @@ export default {
                         <div class="input-boxes">
                             <div class="input-box">
                                 <i class="fa fa-envelope" />
-                                <input id="username" v-model="user.username" type="text" :disabled="isLoading"
-                                    placeholder="Enter your username" required>
+                                <input id="email" v-model="user.email" type="text" :disabled="isLoading"
+                                    placeholder="Enter your email" required>
                             </div>
                             <div class="input-box">
                                 <i class="fa fa-lock" />
                                 <input id="password" v-model="user.password" :disabled="isLoading" type="password"
                                     placeholder="Enter your password" required>
                             </div>
-                            <div class="text">
-                                <a href="#">Forgot password?</a>
-                            </div>
+
                             <div :disabled="isLoading" class="button input-box">
                                 <input type="submit" value="Sumbit">
                             </div>

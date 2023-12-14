@@ -44,7 +44,7 @@ export default {
 
                     <!-- tova e bez emit-->
                     <router-link :to="{ name: 'person-contact', params: { id: person.id } }" v-if="isAuth"
-                        class="w3-button w3-light-grey w3-block">
+                        class="w3-button w3-light-grey w3-block" style="margin-bottom: 10px;">
                         <i class="fa fa-envelope" /> Contact
                     </router-link>
 

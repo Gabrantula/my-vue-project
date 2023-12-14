@@ -28,7 +28,7 @@ export default {
 
             <h3>{{ item.title }}</h3>
             <p class="w3-opacity">
-                Created from {{ item.createdFrom }}
+                Created from <span>{{ item.createdFrom }}</span>
             </p>
 
             <h3>Info</h3>
@@ -49,12 +49,14 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 10vh;
+    margin: 10% auto 2% auto;
+    box-shadow: 5px 5px 10px rgb(80, 138, 115);
 }
 
 .box .image {
-    width: 50%;
-    height: 50vh;
+    width: 40%;
+    height: 100%;
+    box-shadow: 5px 5px 10px rgb(80, 138, 115);
 }
 
 .image img {
@@ -63,7 +65,57 @@ export default {
 }
 
 .box .info {
+    text-align: center;
+    width: 60%;
+}
 
-    margin: 0 auto;
+.info h3 {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    color: rgb(80, 138, 115);
+    text-shadow: 2px 4px 10px gray;
+}
+
+.info h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin: 10px auto;
+    width: 50%;
+    height: 2px;
+    background-color: rgb(80, 138, 115);
+}
+
+.info span {
+    font-size: 1.5rem;
+    color: rgb(80, 138, 115);
+    font-style: italic;
+}
+
+/*
+.info :nth-child(3) {
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-top: 30px;
+}
+*/
+.info :nth-child(3) {
+    margin-top: 30px;
+    font-size: 1.7rem;
+    letter-spacing: 1.5px;
+    color: rgb(80, 138, 115);
+
+}
+
+.info :nth-child(4) {
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-top: 30px;
 }
 </style>

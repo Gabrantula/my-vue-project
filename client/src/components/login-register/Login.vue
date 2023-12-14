@@ -21,11 +21,7 @@ export default {
     data() {
         return {
             isLoading: false,
-            /*
-            user: {
-                username: '',
-                password: '',
-            },*/
+
             user: {
                 email: '',
                 password: '',
@@ -61,7 +57,7 @@ export default {
                 gender: {
                     required
                 }
-            },
+            }
         };
     },
     methods: {
@@ -95,8 +91,7 @@ export default {
                 this.$router.push('/profile');
             }
             this.isLoading = false;
-            // username: kminchelle ,
-            // password:  0lelplR ,
+
         },
     },
 };
@@ -133,25 +128,17 @@ export default {
                     </div>
                     <form @submit.prevent="onSubmit">
                         <div class="input-boxes">
-                            <!-- <div class="input-box">
-                                <i class="fa fa-envelope" />
-                                <input id="username" v-model="user.username" :disabled="isLoading" type="text"
-                                    placeholder="Enter your username" required>
-                            </div> -->
+
                             <div class="input-box">
                                 <i class="fa fa-envelope" />
                                 <input id="email" v-model="user.email" :disabled="isLoading" type="text"
                                     placeholder="Enter your email" required>
                             </div>
 
-
                             <div class="input-box">
                                 <i class="fa fa-lock" />
                                 <input id="password" v-model="user.password" :disabled="isLoading" type="password"
                                     placeholder="Enter your password" required>
-                            </div>
-                            <div class="text">
-                                <a href="#">Forgot password?</a>
                             </div>
                             <div class="button input-box">
                                 <input :disabled="isLoading" type="submit" value="Sumbit">
@@ -186,7 +173,7 @@ export default {
                             <FormItem class="input-box" field="password" required :v$="v$">
                                 <i class="fa fa-lock" />
 
-                                <input id="pass2" v-model="registerData.password" placeholder="Enter your password"
+                                <input id="password" v-model="registerData.password" placeholder="Enter your password"
                                     :class="{ error: v$?.registerData.password.$errors.length }" type="password">
                             </FormItem>
 
