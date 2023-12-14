@@ -41,35 +41,74 @@ export default {
 </script>
 
 <template>
-    <h1 style="text-align: center;">
-        Cart
-    </h1>
     <!-- <Loader v-if="isLoading" /> -->
-
 
     <div class="container">
         <article>
-            <table>
+            <div class="cart">
+                <h2>Shopping Cart</h2>
+            </div>
+            <div class="break"></div>
+
+            <div class="info">
+                <div class="titles">
+                    <h3>Product</h3>
+                    <h3>Price</h3>
+                    <h3>Quantity</h3>
+                    <h3>Total</h3>
+                </div>
+                <div class="break"></div>
+
+                <div class="table" v-for="offer in cards" :key="offer._id">
+                    <div class="item start">
+                        <p style="font-size: 1.25rem;">
+                            {{ offerInfo[offer._id].title }}
+                        </p>
+                    </div>
+                    <div class="item center">
+                        <p style="font-size: 1rem;">
+
+                            {{ offerInfo[offer._id].price }}$
+                        </p>
+                    </div>
+                    <div class="item center">
+                        <input type="number" :value="offer.quantity" style="width: 4.5rem;"
+                            @input="changeQuantity(offer._id, $event)">
+                    </div>
+                    <div class="item end">
+
+                        <span>{{ offerInfo[offer._id].price * offer.quantity }}$</span>
+                    </div>
+
+                </div>
+
+                <div class="total">
+                    <span class="shadow">Total sum: </span><span> {{ totalSum }}$</span>
+                </div>
+            </div>
+
+            <!-- 
+    <table>
                 <thead>
                     <tr>
                         <th>Product</th>
-                        <th>Description</th>
                         <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr v-for="offer in cards" :key="offer._id">
                         <td>
-                            <div style="aspect-ratio: 1/1; width: 5rem; border-radius: 0.5rem; overflow: hidden;">
+                            <p style="font-size: 1.25rem;">
                                 {{ offerInfo[offer._id].title }}
-                            </div>
+                            </p>
                         </td>
                         <td>
-                            <p style="font-size: 1.25rem;">
-                                {{ offerInfo[offer._id].support }}
-                            </p>
+
                             <p style="font-size: 0.75rem;">
-                                Product price: {{ offerInfo[offer._id].price }}$
+
+                                {{ offerInfo[offer._id].price }}$
                             </p>
                         </td>
 
@@ -93,13 +132,104 @@ export default {
                     </tr>
                 </tfoot>
             </table>
+-->
+
         </article>
     </div>
 </template>
 
 <style  scoped>
+/*.container {
+    margin: 100px auto;
+}
+
+.cart {
+    text-align: center;
+}
+
 table {
     max-width: 720px;
     margin: 0 auto;
+}*/
+.container {
+    margin: 100px auto;
+    position: relative;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+article .cart h2 {
+    text-shadow: 2px 4px 10px gray;
+}
+
+.break {
+    width: 100%;
+    height: 1.5px;
+    background-color: gray;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.info .titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(80, 138, 115);
+    text-shadow: 2px 4px 10px gray;
+}
+
+.info .table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.info .table .item {
+    width: 24%;
+    text-align: center;
+}
+
+.info .table .start {
+    text-align: start;
+}
+
+.info .table .end {
+    text-align: right;
+}
+
+.info .total {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    font-size: 1.5rem;
+}
+
+span {
+    font-style: italic;
+    color: rgb(80, 138, 115);
+}
+
+.shadow {
+    color: black;
+    text-shadow: 2px 4px 10px gray;
+}
+
+input {
+    margin-left: 30px;
 }
 </style>
