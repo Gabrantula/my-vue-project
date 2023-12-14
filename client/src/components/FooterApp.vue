@@ -29,3 +29,7 @@ export default {
     margin-left: 5px;
 }
 </style>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 85bf90df8c05c4fe1779a9fd4c0fa76006318fe8

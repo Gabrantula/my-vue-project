@@ -68,6 +68,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
+<<<<<<< HEAD
     /* margin-top: 12vh;*/
     margin: 10% auto 2% auto;
     box-shadow: 5px 5px 10px rgb(80, 138, 115);
@@ -84,6 +85,14 @@ export default {
     margin-top: 30px;
     margin-left: 1%;
     filter: brightness(75%);
+=======
+    margin-top: 10vh;
+}
+
+.box .image {
+    width: 50%;
+    height: 50vh;
+>>>>>>> 85bf90df8c05c4fe1779a9fd4c0fa76006318fe8
 }
 
 .image img {
@@ -92,6 +101,7 @@ export default {
 }
 
 .box .info {
+<<<<<<< HEAD
     text-align: center;
 
 }
@@ -133,3 +143,9 @@ export default {
 
 }
 </style>
+=======
+
+    margin: 0 auto;
+}
+</style>
+>>>>>>> 85bf90df8c05c4fe1779a9fd4c0fa76006318fe8

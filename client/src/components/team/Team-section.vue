@@ -1,7 +1,10 @@
 <script>
 //import { useTeamStore } from '../../pinia-store/teamStore';
 import { getAllTeam } from '../../services/team';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 85bf90df8c05c4fe1779a9fd4c0fa76006318fe8
 //import { mapActions } from 'pinia';
 import PersonCard from './PersonCard.vue';
 

@@ -195,9 +195,14 @@ export default {
     </div>
 </template>
 
+<<<<<<< HEAD
 <style  scoped>
 .w3-row-padding {
     width: 80vw;
     margin: 0 auto;
 }
 </style>
+=======
+<style  scoped></style>
+
+>>>>>>> 85bf90df8c05c4fe1779a9fd4c0fa76006318fe8
