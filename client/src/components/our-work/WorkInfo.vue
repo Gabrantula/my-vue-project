@@ -22,7 +22,7 @@ export default {
 <template>
     <div class="box">
         <div class="image">
-            <img :src="item.image" alt="img" style="width:100%">
+            <img :src="item.image" alt="img">
         </div>
         <div class="info">
 
@@ -49,17 +49,15 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
     margin: 10% auto 2% auto;
     box-shadow: 5px 5px 10px rgb(80, 138, 115);
 }
 
 .box .image {
     width: 50%;
-    height: 50vh;
+    height: 60vh;
     box-shadow: 5px 5px 10px rgb(80, 138, 115);
-
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 .image img {
@@ -102,13 +100,6 @@ export default {
     font-style: italic;
 }
 
-/*
-.info :nth-child(3) {
-    font-size: 1.4rem;
-    font-style: italic;
-    margin-top: 30px;
-}
-*/
 .info :nth-child(3) {
     margin-top: 30px;
     font-size: 1.7rem;
@@ -121,8 +112,6 @@ export default {
     font-size: 1.4rem;
     font-style: italic;
     margin-top: 30px;
-
-
 
 }
 </style>

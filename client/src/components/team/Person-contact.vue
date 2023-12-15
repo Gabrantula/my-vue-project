@@ -75,21 +75,15 @@ export default {
 }
 
 .box .image {
-    /* width: 45%;
-    height: 90%;*/
-    width: 50%;
-    height: 50vh;
-    /* margin-left: 3%;*/
+    width: 45%;
+    height: 90%;
     box-shadow: 5px 5px 10px rgb(80, 138, 115);
     border-radius: 3%;
     overflow: hidden;
     margin-top: 30px;
     margin-left: 1%;
     filter: brightness(75%);
-
-    margin-top: 10vh;
 }
-
 
 .image img {
     width: 100%;

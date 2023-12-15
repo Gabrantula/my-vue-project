@@ -58,7 +58,7 @@ export default {
                 <span class="w3-opacity">per month</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
-                <!--  <button class="w3-button w3-black w3-padding-large">Sign Up</button> -->
+
                 <router-link v-if="isAuth" to="/cart" @click="$emit('onAddToCart', card._id)"
                     class="w3-button w3-black w3-padding-large">
                     Buy now
