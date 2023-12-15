@@ -81,6 +81,7 @@ export default {
         async onSubmit() {
             this.isLoading = true;
             const userData = await loginUser(this.user);
+
             console.log(userData);
 
             if (userData) {
@@ -131,12 +132,12 @@ export default {
                                 <input id="email" v-model="user.email" :disabled="isLoading" type="text"
                                     placeholder="Enter your email" required>
                             </div>
-
                             <div class="input-box">
                                 <i class="fa fa-lock" />
                                 <input id="password" v-model="user.password" :disabled="isLoading" type="password"
                                     placeholder="Enter your password" required>
                             </div>
+
                             <div class="button input-box">
                                 <input :disabled="isLoading" type="submit" value="Sumbit">
                             </div>
