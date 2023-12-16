@@ -35,7 +35,6 @@ export default {
                 </p>
             </div>
             <div class="w3-quarter">
-                <!-- <i class="fa fa-gem w3-margin-bottom w3-jumbo"></i> -->
 
                 <i class="fa fa-diamond w3-margin-bottom w3-jumbo" />
                 <p class="w3-large">

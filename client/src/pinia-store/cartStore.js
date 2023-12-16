@@ -21,8 +21,6 @@ export const useCartStore = defineStore('cart', {
             else {
                 offerInCart.quantity += 1
             }
-            // console.log(offer._id);
-            // console.log(selectedId);
         },
         changeQuantity(offeId, event) {
             const Quantity = Number(event.target.value) ?? 0

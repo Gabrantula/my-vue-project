@@ -1,43 +1,21 @@
 
 <script>
-//import PersonCard from './PersonCard.vue';
 import { getSinglePerson } from '../../services/team'
-//import { mapState } from 'pinia';
-//import { useTeamStore } from '../../pinia-store/teamStore';
 
 
 export default {
     props: ["id"],
-    // components: { PersonCard },
+
     data() {
         return {
             person: [],
-            // isLoading: true,
+
         };
     },
     async created() {
         this.person = await getSinglePerson(this.$route.params.id);
-        // this.isLoading = false;
-    },
 
-    /* props: {
-         person: {
-             type: Object,
-             required: true,
-             default: () => ({
-                 image: "/pic/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg",
-                 name: "DEFAULT",
-                 position: "DEFAULT",
-                 description: "DEFAULT",
-                 phone: "0",
-                 id: "-2"
-             })
-         }
-     },
-     computed: {
- 
-         ...mapState(useTeamStore, ['getPerson'])
-     },*/
+    },
 
 }
 </script>
@@ -68,7 +46,6 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* margin-top: 12vh;*/
     margin: 10% auto 2% auto;
     box-shadow: 5px 5px 10px rgb(80, 138, 115);
     border-radius: 3%;
@@ -91,9 +68,7 @@ export default {
 }
 
 .box .info {
-
     text-align: center;
-
 }
 
 .info h3 {

@@ -63,14 +63,12 @@ export default {
             this.isLoading = true
             const isValid = await this.v$.$validate();
 
-            //  console.log(isValid);
+
             const userData = await registerUser(this.registerData)
             console.log(userData);
             if (isValid) {
                 this.setProfile(userData)
                 this.$router.push('/profile')
-                // eslint-disable-next-line no-alert
-                //  window.alert('Welcome to our site!');
 
             }
             this.isLoading = false
@@ -99,7 +97,7 @@ export default {
         <input id="flip-2" type="checkbox">
         <div class="cover">
             <div class="front">
-                <!--    <img src="./pic/ourWork/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg" alt=""> -->
+
                 <img src="/pic/login-register/backImg.jpg" alt="">
                 <div class="text">
                     <span class="text-1">Complete miles of journey <br> with one step</span>

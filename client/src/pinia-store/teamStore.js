@@ -14,12 +14,6 @@ export const useTeamStore = defineStore('team', {
             return personId = state.team.find(person => person.id === personId)
         }
     },
-    /*
-        actions: {
-            contact(id) {
-                const currPerson = this.team.find(person => person.id === id)
-                return currPerson
-            }
-        }*/
+
 })
 

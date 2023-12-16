@@ -1,8 +1,6 @@
 <script>
-//import { useTeamStore } from '../../pinia-store/teamStore';
-import { getAllTeam } from '../../services/team';
 
-//import { mapActions } from 'pinia';
+import { getAllTeam } from '../../services/team';
 import PersonCard from './PersonCard.vue';
 
 export default {
@@ -21,10 +19,6 @@ export default {
         const promis = await Promise.all([getAllTeam(), []]);
         this.team = promis[0];
     },
-    /*  methods: {
-          ...mapActions(useTeamStore, ['contact'])
-      },*/
-
 };
 </script>
 

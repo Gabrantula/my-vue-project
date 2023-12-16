@@ -14,15 +14,6 @@ export default {
     <div v-if="profile" class="cont">
         <h1>My Profile</h1>
         <div class="profile">
-            <!--
-   <div class="skills">
-                <p><span>✅</span> lorem Ipsum</p>
-                <p><span>✅</span> lorem Ipsum</p>
-                <p><span>✅</span> lorem Ipsum</p>
-                <p><span>✅</span> lorem Ipsum</p>
-                <p><span>✅</span> lorem Ipsum</p>
-            </div>
-            -->
 
             <div class="info">
                 <p>Name:</p>

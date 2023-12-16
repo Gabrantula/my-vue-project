@@ -7,31 +7,7 @@ import PricingCard from './pricingCard.vue';
 import { useCartStore } from '../../pinia-store/cartStore';
 
 export default {
-    /* components: { Loader, PricingCard },
-     data() {
-         return {
-             cards: [],
-             isLoading: true
-         }
-     },
-     computed: {
-         ...mapState(useUserStore, ['isAuth']),
-         ...mapState(useCartStore, ['getOffer']),
- 
-         displayProducts() {
-             return this.cards
-         }
-     },
-     async created() {
-         const promis = await Promise.all([getAllProducts(), []])
-        
-         this.cards = promis[0]
-       
-         this.isLoading = false
-     },
-     methods: {
-         ...mapActions(useCartStore, ['addToCart'])
-     }*/
+
     components: { Loader, PricingCard },
     data() {
         return {

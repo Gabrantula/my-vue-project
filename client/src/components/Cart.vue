@@ -87,70 +87,11 @@ export default {
                 </div>
             </div>
 
-            <!-- 
-    <table>
-                <thead>
-                    <tr>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr v-for="offer in cards" :key="offer._id">
-                        <td>
-                            <p style="font-size: 1.25rem;">
-                                {{ offerInfo[offer._id].title }}
-                            </p>
-                        </td>
-                        <td>
-
-                            <p style="font-size: 0.75rem;">
-
-                                {{ offerInfo[offer._id].price }}$
-                            </p>
-                        </td>
-
-                        <td>
-                            <input type="number" :value="offer.quantity" style="width: 5rem;"
-                                @input="changeQuantity(offer._id, $event)">
-                        </td>
-                        <td class="price">
-                            {{ offerInfo[offer._id].price * offer.quantity }}$
-                        </td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="3">
-                            Total:
-                        </td>
-                        <td class="price">
-                            {{ totalSum }}$
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
--->
-
         </article>
     </div>
 </template>
 
 <style  scoped>
-/*.container {
-    margin: 100px auto;
-}
-
-.cart {
-    text-align: center;
-}
-
-table {
-    max-width: 720px;
-    margin: 0 auto;
-}*/
 .container {
     margin: 100px auto;
     position: relative;

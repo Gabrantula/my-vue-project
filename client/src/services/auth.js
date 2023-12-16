@@ -21,8 +21,8 @@ export async function registerUser(userData) {
     try {
 
         const res = await axios.post('http://localhost:3030/users/register', userData)
-        // console.log(res);
         return res.data
+
     } catch (err) {
         console.error(err)
         return null
