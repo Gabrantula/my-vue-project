@@ -63,6 +63,8 @@ export default {
                 onclick="w3_open()">
                 <i class="fa fa-bars" />
             </router-link>
+
+
         </div>
     </div>
 

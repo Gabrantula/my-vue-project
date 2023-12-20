@@ -39,7 +39,7 @@ export default {
 
 <template>
     <!-- Pricing Section -->
-    <div id="pricing" class="w3-container w3-center pricing" style="padding:128px 16px">
+    <div id="pricing" class="w3-container w3-center pricing">
         <h3>PRICING</h3>
         <p class="w3-large">
             Choose a pricing plan that fits your needs.
@@ -56,6 +56,10 @@ export default {
 
 
 <style  scoped>
+#pricing {
+    padding: 128px 16px
+}
+
 .w3-row-padding {
     width: 80vw;
     margin: 0 auto;

@@ -24,18 +24,25 @@ export default {
 
 <template>
     <!-- Team Section -->
-    <div id="team" class="w3-container" style="padding:128px 16px">
+    <div id="team" class="w3-container">
         <h3 class="w3-center">
             THE TEAM
         </h3>
         <p class="w3-center w3-large">
             The ones who runs this company
         </p>
-        <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+        <div class="w3-row-padding w3-grayscale">
             <PersonCard v-for="person in displayTeam" :key="person.id" :person="person" />
-            <!--<PersonCard v-for="person in displayTeam" :key="person.id" :person="person" @on-contact="contact" /> -->
         </div>
     </div>
 </template>
 
-<style  scoped></style>
+<style  scoped>
+#team {
+    padding: 128px 16px;
+}
+
+.w3-grayscale {
+    margin-top: 64px;
+}
+</style>

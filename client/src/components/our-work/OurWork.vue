@@ -23,7 +23,7 @@ export default {
 
 <template>
     <!-- Work Section -->
-    <div id="work" class="w3-container" style="padding:128px 16px">
+    <div id="work" class="w3-container">
         <h3 class="w3-center">
             OUR WORK
         </h3>
@@ -31,7 +31,7 @@ export default {
             What we've done for people
         </p>
 
-        <div class="w3-row-padding" style="margin-top:64px">
+        <div class="w3-row-padding">
             <WorkCard v-for="item in displayWork" :key="item.id" :item="item" />
         </div>
 
@@ -49,4 +49,12 @@ export default {
     -->
 </template>
 
-<style  scoped></style>
+<style  scoped>
+#work {
+    padding: 128px 16px;
+}
+
+.w3-row-padding {
+    margin-top: 64px
+}
+</style>

@@ -17,7 +17,7 @@ export default {
 </script>
 <template>
     <router-link :to="{ name: 'work-info', params: { id: item.id } }" class="w3-col l3 m6">
-        <img :src="item.image" style="width:100%" class="w3-hover-opacity" alt="img">
+        <img :src="item.image" class="w3-hover-opacity" alt="img">
     </router-link>
 </template>
 
@@ -26,5 +26,9 @@ export default {
 <style scoped>
 .w3-col {
     margin-bottom: 20px;
+}
+
+img {
+    width: 100%
 }
 </style>

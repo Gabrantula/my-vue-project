@@ -6,14 +6,14 @@ export default {
 
 <template>
     <!-- About Section -->
-    <div id="about" class="w3-container" style="padding:128px 16px">
+    <div id="about" class="w3-container">
         <h3 class="w3-center">
             ABOUT THE COMPANY
         </h3>
         <p class="w3-center w3-large">
             Key features of our company
         </p>
-        <div class="w3-row-padding w3-center" style="margin-top:64px">
+        <div class="w3-row-padding w3-center">
             <div class="w3-quarter">
                 <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center" />
                 <p class="w3-large">
@@ -61,7 +61,12 @@ export default {
 
 <style scoped>
 #about {
+    padding: 128px 16px;
     margin-top: 50px;
     height: 70vh;
+}
+
+.w3-row-padding {
+    margin-top: 64px;
 }
 </style>

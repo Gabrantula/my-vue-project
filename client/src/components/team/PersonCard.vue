@@ -31,7 +31,7 @@ export default {
 <template>
     <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-card">
-            <img :src="person.image" alt="img" style="width:100%">
+            <img :src="person.image" alt="img">
             <div class="w3-container">
                 <h3>{{ person.name }}</h3>
                 <p class="w3-opacity">
@@ -44,7 +44,7 @@ export default {
 
                     <!-- tova e bez emit-->
                     <router-link :to="{ name: 'person-contact', params: { id: person.id } }" v-if="isAuth"
-                        class="w3-button w3-light-grey w3-block" style="margin-bottom: 10px;">
+                        class="w3-button w3-light-grey w3-block">
                         <i class="fa fa-envelope" /> Contact
                     </router-link>
 
@@ -61,5 +61,13 @@ export default {
 </template>
 
 
-<style scoped></style>
+<style scoped>
+img {
+    width: 100%;
+}
+
+.w3-button {
+    margin-bottom: 10px;
+}
+</style>
 

@@ -21,7 +21,7 @@ export default {
                 </router-link>
             </p>
         </div>
-        <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+        <div class="w3-display-bottomleft w3-text-grey w3-large">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-snapchat"></i>
@@ -117,7 +117,12 @@ export default {
 </template>
 
 <style  scoped>
+.w3-display-bottomleft {
+    padding: 24px 48px;
+}
+
 .w3-display-bottomleft i {
     margin-left: 3px;
+
 }
 </style>

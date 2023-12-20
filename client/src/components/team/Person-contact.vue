@@ -22,7 +22,7 @@ export default {
 <template>
     <div class="box">
         <div class="image">
-            <img :src="person.image" alt="img" style="width:100%">
+            <img :src="person.image" alt="img">
         </div>
         <div class="info">
             <h3>{{ person.name }}</h3>

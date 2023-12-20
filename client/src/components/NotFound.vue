@@ -83,7 +83,6 @@ div {
     cursor: pointer;
     color: white;
     text-shadow: 1px 1px 1px black;
-    /* color: #383535;*/
     border-radius: 10px;
     border: 2px gray;
     text-decoration: none;
